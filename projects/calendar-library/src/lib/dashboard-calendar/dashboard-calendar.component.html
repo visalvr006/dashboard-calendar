@@ -1,0 +1,33 @@
+
+    <div class="card">
+      <div class="calendar-toolbar">
+        <!-- <button class="prev month-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button> -->
+        <div class="current-month">{{currentMonth}}</div>
+        <button (click)="nextMonth()" class="next month-btn">
+          <img src="../../assets/right-arrow.png">
+          <!-- <i class="fas fa-chevron-right"></i> -->
+        </button>
+      </div>
+      <div class="calendar">
+        <div class="weekdays">
+          <div class="weekday-name" style="color:red">Su</div>
+          <div class="weekday-name">Mo</div>
+          <div class="weekday-name">Tu</div>
+          <div class="weekday-name">We</div>
+          <div class="weekday-name">Th</div>
+          <div class="weekday-name">Fr</div>
+          <div class="weekday-name">Sa</div>
+        </div>
+        <div class="weekdays">
+          <div [ngClass]="{ 'current-day': day=== currentDate}" *ngFor="let day of days" class="day-list">{{day}}</div>
+        </div>
+
+      </div>
+      <!-- <div class="goto-buttons">
+        <button type="button" class="btn prev-year">Prev Year</button>
+        <button type="button" class="btn today">Today</button>
+        <button type="button" class="btn next-year">Next Year</button>
+      </div> -->
+    </div>

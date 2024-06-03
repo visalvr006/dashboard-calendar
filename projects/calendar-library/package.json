@@ -1,0 +1,15 @@
+{
+  "name": "angular-dashboard-calendar",
+  "version": "0.1.0",
+  "description": "This is a test version, new features and updates will be relesed in upcomming versions. For any support and custom features contact visalvr006@gmail.com.",
+  "author": "Visal VR <visalvr006@gmail.com>",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "keywords": ["agni", "agni-calendar", "angular-calendar", "calendar", "dashboard-calendar", "agni-dashboard-calendar"],
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
